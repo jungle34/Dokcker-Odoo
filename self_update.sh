@@ -1,3 +1,5 @@
+#!/usr/bin/expect -f
+
 set github_username "jungle34"
 set github_password "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"
 set repo_url "https://github.com/jungle34/OdooPersonalDev.git"
