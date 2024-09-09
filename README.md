@@ -7,5 +7,5 @@ sudo docker run -p 5432:5432 -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo 
 ```
 
 ```shell
-sudo docker run -d -p 8069:8069 --name odoo --link db:db -t personal/odoo
+sudo docker run -v /var/local/odoo:/var/lib/odoo/addons/17.0/ -d -p 8069:8069 --name odoo --link db:db -t personal/odoo
 ```
