@@ -1,6 +1,6 @@
 #!/usr/bin/expect -f
 
-set github_username "**your_git_hub_username**"
+set github_username "your_git_hub_username"
 set github_password "**your_git_hub_personal_token**"
 set repo_url "**your_addons_repository_link**"
 

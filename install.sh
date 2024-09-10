@@ -7,4 +7,4 @@ read token
 echo "Digite o link do repositório:"
 read repo
 
-sed -i "s/**your_git_hub_username**/$username/g" self_update.sh
+sed -i "s/your_git_hub_username/$username/g" self_update.sh
