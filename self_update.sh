@@ -1,8 +1,8 @@
 #!/usr/bin/expect -f
 
-set github_username "jungle34"
-set github_password "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"
-set repo_url "https://github.com/jungle34/OdooPersonalDev.git"
+set github_username "**your_git_hub_username**"
+set github_password "**your_git_hub_personal_token**"
+set repo_url "**your_addons_repository_link**"
 
 # Executa o git pull
 spawn git pull
