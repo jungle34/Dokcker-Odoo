@@ -3,6 +3,7 @@
 set github_username "your_git_hub_username"
 set github_password "**your_git_hub_personal_token**"
 set repo_url "**your_addons_repository_link**"
+set container_name "docker_container_name"
 
 # Executa o git pull
 spawn git pull
@@ -21,6 +22,6 @@ expect eof
 
 # Remover comentário quando script executado no mesmo container do repositório
 # spawn chown odoo:odoo -R /var/lib/odoo/addons/17.0/
-spawn docker exec -u 0 -it odoo odoo -u -d "all"
+spawn docker exec -u 0 -it odoo "$container_name\r" -u -d "all"
 
-expect odoo
+expect "$container_name\r"
