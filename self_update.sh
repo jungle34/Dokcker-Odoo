@@ -22,3 +22,5 @@ expect eof
 # Remover comentário quando script executado no mesmo container do repositório
 # spawn chown odoo:odoo -R /var/lib/odoo/addons/17.0/
 spawn docker exec -u 0 -it odoo odoo -u -d "all"
+
+expect odoo
