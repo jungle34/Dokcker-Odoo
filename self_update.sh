@@ -19,4 +19,5 @@ expect {
 # Espera o git pull concluir
 expect eof
 
-spawn chown odoo:odoo -R /var/lib/odoo/addons/17.0/
+# Remover comentário quando script executado no mesmo container do repositório
+# spawn chown odoo:odoo -R /var/lib/odoo/addons/17.0/
